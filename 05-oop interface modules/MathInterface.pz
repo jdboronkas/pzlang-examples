@@ -1,0 +1,10 @@
+;;;
+    interface keyword marks the module as an interface
+    
+    an interface module can not be constructed, can not have a constructor, and may only contain 'forced' 'public' functions
+;;;
+
+interface module
+    forced public func int Add (int a, int b) ; parenthesis are an optional wrapper around certain phrases, parameters being one of them
+    forced public func int Subtract int a, int b ; no parenthesis is just as good
+end module

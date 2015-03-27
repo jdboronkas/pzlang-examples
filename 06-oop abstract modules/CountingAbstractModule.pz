@@ -1,0 +1,31 @@
+;;;
+    abstract keyword marks the module abstract
+    
+    an abstract module can not be constructed, but may have a constructor, implemented functions, and member variables
+        that are public, shared, overridden from another module, or private
+        
+    forced functions may only be 'public' or 'shared' and must be implemented by child modules
+        
+;;;
+
+abstract module
+    int count: get, set
+
+    public constructor
+        self.ResetCount
+    end constructor
+    
+    private func void ResetCount ; private functions are just Helper Functions that can not be accessed by children
+        count = 0
+    end func
+    
+    shared func void DecrementCount ; shared functions are treated 'normally', meaning they may or may not be overridden by children
+        count = count - 1
+    end func
+    
+    public func void IncrementCount ; public functions are treated 'normally' as well
+        count = count + 1
+    end func
+    
+    forced public func bool IsGoodCount ; 'forced' functions mean that a child is 'forced' to 'override' and implement the given function
+end module

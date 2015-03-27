@@ -1,0 +1,15 @@
+;;;
+    This is a multi-line comment..
+    
+    If a module is marked static, then it can
+      not have a constructor and can not be created as an object.
+;;;
+static module
+    static int number = 5: get, set ; variables in a static module follow the same rules as a normal module
+                                    ; meaning they don't need to be static and can be marked with get, set, 
+                                    ; or neither (to make it private).
+    
+    static func string Echo String s ; a static function is 'always' public
+        return s
+    end func; Echo
+end module

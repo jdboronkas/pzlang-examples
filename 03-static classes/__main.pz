@@ -1,0 +1,10 @@
+require IO
+require ImStatic
+
+main
+    IO.Print ImStatic.number ; access static members by module name then the member identifier
+                             ; note that we have both 'get' and 'set' access to 'ImStatic.number'
+    ImStatic.number = ImStatic.number + 5 ; ImStatic.number is 10 after this
+    
+    IO.Print ImStatic.Echo "Echo this string for me!" ; prints 'Echo this string for me!' to console
+end main

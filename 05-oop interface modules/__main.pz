@@ -1,0 +1,7 @@
+require Mather
+
+main
+    Mather m
+    m.Add(3, 2) ; returns '5', note the parenthesis..
+    m.Subtract 5, 4 ; and no parenthesis..
+end main

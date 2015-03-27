@@ -1,0 +1,5 @@
+require IO
+
+main
+    IO.print "Hello world!"
+end main

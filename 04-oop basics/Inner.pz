@@ -1,0 +1,15 @@
+require SomePackage.Outer ; packages go by folder names in the directory
+                          ; if a module name (file) is targeted, then only that module is required
+                          ; if a package name (folder) is targeted, then every sub module and package are required
+                   
+module extends Outer ; only one module may be extended
+    ; constructor defaults to parent's constructor unless overridden
+    override public constructor ; must match parent's signature
+        IO.Print "Inner constructor" ; parent's requires are auto-required by all children
+    end constructor
+    
+    override public func void OverrideMe ; must match parent's signature
+        self.ChildrenAndSelfOnly ; parent marked this function as shared, so this child has access to it.
+        parent.OverrideMe ; parent keyword references extended module
+    end func
+end module

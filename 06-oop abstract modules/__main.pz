@@ -1,0 +1,7 @@
+require Counter
+
+main
+    Counter c
+    c.IncrementCount
+    c.IsGoodCount
+end main

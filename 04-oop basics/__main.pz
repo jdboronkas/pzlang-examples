@@ -1,0 +1,6 @@
+require Inner
+
+main
+    Inner inner
+    inner.OverrideMe
+end main

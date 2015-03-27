@@ -1,0 +1,6 @@
+- boolean logic (if, else if, else, switch)
+- arrays (int[5] array, array[3], array.length)
+- loops (for, while, foreach)
+- command line args (main string[] args)
+- example program using oop techniques
+- self-documenting code (compiler generates .html and .css documentation auto-magically)

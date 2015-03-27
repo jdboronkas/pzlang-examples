@@ -1,0 +1,22 @@
+require IO
+
+module
+    shared int number ; shared variables are accessible by child modules (think 'protected')
+    
+    public constructor
+        IO.Print "Outer constructor"
+        self.OuterOnly
+    end constructor
+    
+    private func void OuterOnly ; 'private' - only self can use this
+        IO.Print "Outer: Outer Only"
+    end func
+    
+    shared func void ChildrenAndSelfOnly ; 'protected' - only self and children can use this
+        IO.Print "Outer: Children And Self Only"
+    end func
+    
+    public func void OverrideMe ; 'public' - any that 'require' this module can use this
+        IO.Print "Outer: Override Me"
+    end func
+end module

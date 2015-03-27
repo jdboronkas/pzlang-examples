@@ -1,0 +1,7 @@
+require IO
+require MyMath
+
+main
+    MyMath m 4, 20 ; constructs a new MyMath object, named 'm' using its constructor and passing arguments
+    IO.Print m.Add ; m.Add returns 24, that gets passed to IO.Print that prints '24' to the screen
+end main
