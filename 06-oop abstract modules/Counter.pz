@@ -2,7 +2,7 @@ require CountingAbstractModule
 
 module extends CountingAbstractModule ; abstract modules must be extended
 
-    forced override public func bool IsGoodCount ; since this was 'forced' by a parent interface
+    forced override bool IsGoodCount() ; since this was 'forced' to 'override' by a parent interface
         return true
     end func
     

@@ -9,7 +9,7 @@ static module
                                     ; meaning they don't need to be static and can be marked with get, set, 
                                     ; or neither (to make it private).
     
-    static func string Echo String s ; a static function is 'always' public
+    static string Echo(String s) ; a static function is 'always' public
         return s
     end func; Echo
 end module

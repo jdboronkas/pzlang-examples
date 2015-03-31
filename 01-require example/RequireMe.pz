@@ -1,7 +1,7 @@
 require IO
 
 module
-    public func void PrintMe string printMe
-        IO.Print printMe
+    public void PrintMe (string printMe)
+        IO.Print(printMe)
     end func
 end module

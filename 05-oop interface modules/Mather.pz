@@ -3,11 +3,11 @@ require MathInterface
 module implements MathInterface ; interfaces must be implemented, note that more than one interface may be implemented
                                 ; ie, module extends foo implements bar, baz, doh
 
-    forced override public func int Add int a, int b ; flipping parenthesis is okay..
+    forced override int Add(int a, int b)
         return a + b
     end func
     
-    forced override public func int Subtract (int a, int b)
+    forced override int Subtract (int a, int b)
         return a - b
     end func
     

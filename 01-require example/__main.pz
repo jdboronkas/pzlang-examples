@@ -3,7 +3,7 @@ require RequireMe
 main
     RequireMe rm; Creates a new object (defaults to default constructor) `;` is a comment.
                 ; Also note that the module name comes from the file name.
-    rm.PrintMe "Hello, require!"
+    rm.PrintMe("Hello, require!")
     
     return 0; Return optionally returns an int as a status (default to 0)
 end main

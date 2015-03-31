@@ -3,12 +3,12 @@ module
     int b: get ; get keyword allows public access to grab this value
     int c: get, set ; set keyword allows public access to set this value
     
-    public constructor int a, int b ; how to write a constructor that overrides the default (of nothing)
+    public constructor (int a, int b) ; how to write a constructor that overrides the default (of nothing)
         self.a = a ; self is 'this' object
         self.b = b
     end constructor
     
-    public func int Add
+    public int Add ()
         return a + b
     end func
 end module
