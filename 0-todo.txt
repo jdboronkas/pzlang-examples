@@ -4,3 +4,8 @@
 - command line args (main string[] args)
 - example program using oop techniques
 - self-documenting code (compiler generates .html and .css documentation auto-magically)
+- run-once block (only executes the code in the block once, then never again for the life of the module)
+- concept of no null objects (no crashes, no try catch)
+- Check module (ie, bool CheckInt(int, int)) for easy checking/if statement reduction
+- module properties are just module class variables (ie, ModuleA.pid (would return `420A`)
+- xml file processing, allows function calls from within xml using pz: namespace and function name (ie, <pz:FooMethod(2, 5) />)
